@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="calculate.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fredoka:wght@400;500;700&family=Poppins:ital,wght@0,400;0,700;1,400;1,800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <div class="age-calc-box">
+    <div class="container">
+      <div class="input-container">
+        <div class="box">
+          <label class="box-day" for="day">DAY</label>
+          <input
+            type="number" 
+            placeholder="DD"
+            id="day" 
+            max="31" 
+            min="1" 
+            maxlength="2"/>
+          <p class="error" id="day-error">Must be a valid day</p>
+        </div>
+  
+        <div class="box">
+          <label class="box-month" for="month">MONTH</label>
+          <input
+            type="number"
+            placeholder="MM"
+            id="month"
+            max="12"
+            min="1"
+            maxlength="2"/>
+          <p class="error" id="month-error">Must be a valid month</p>
+        </div>
+          
+        <div class="box">
+          <label class="box-year" for="year">YEAR</label>
+          <input
+            type="number"
+            placeholder="YYYY"
+            id="year"
+            min="100"
+            maxlength="4"/>
+          <p class="error" id="year-error">Must be a valid year</p>
+        </div>
+      </div>
+
+
+      <div class="submit-container">
+        <button id="submit" class="submit-arrow" disabled>
+          <img id="arrow-icon" src="assets/images/icon-arrow.svg"/>
+        </button>
+        <div class="bar"></div>
+      </div>
+
+    </div>
+
+
+    <div class="result-container">
+      <div class="result">
+        <p class="result-text" id="result-year">- -</p>
+        <p class="result-text"> years </p>
+      </div>
+      <div class="result">
+        <p class="result-text" id="result-month">- -</p>
+        <p class="result-text"> months </p>
+      </div>
+      <div class="result">
+        <p class="result-text" id="result-day">- -</p>
+        <p class="result-text"> days </p>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
